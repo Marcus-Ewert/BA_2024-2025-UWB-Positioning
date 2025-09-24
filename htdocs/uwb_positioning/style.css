@@ -1,0 +1,115 @@
+:root {
+    --primary-background-color: white;
+    --primary-color: black;
+
+    --secondary-background-color: red;
+    --secondary-color: white;
+
+    --tertiary-background-color: #ff8080;
+    --tertiary-color: white;
+
+    --header-height: 7rem;
+    --footer-height: 3rem;
+}
+
+.debug {
+    display: none;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin: 1rem;
+}
+
+header {
+    height: var(--header-height);
+    color: var(--secondary-color);
+    background-color: var(--secondary-background-color);
+    text-align: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: auto;
+    z-index: 1000;
+}
+
+main {
+    color: var(--primary-color);
+    background-color: var(--primary-background-color);
+    margin-top: var(--header-height);
+    /* margin-bottom: var(--footer-height); */
+    /* padding: 1rem; */
+    /* overflow: auto; */
+    /* background-color: gold; */
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+
+.block {
+    /* display: inline-block;*/
+    padding: 1rem; 
+    background-color: ghostwhite;
+    border-style: solid;
+    border-width: 1px;
+    border-color: slategray;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+th, td {
+    padding: .5em;
+    background-color: var(--primary-background-color);
+    border: 1px solid var(--primary-color);
+    border-collapse: collapse;
+}
+
+.svg-container {
+    /* position: relative; */
+    /* width: 500px; */
+    height: auto;
+}
+
+.svg-container svg {
+    border: 2px solid black;
+    width: 100%;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+}
+
+footer {
+    height: var(--footer-height);
+    color: var(--secondary-color);
+    background-color: var(--secondary-background-color);
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+table{
+    width: 100%;
+}
+
+.row {
+    display: flex; 
+}
+
+.anchor, .screen {
+    flex: 1; 
+    padding: 1rem;
+    position: relative;
+}
+
+.control {
+    padding: 1rem;
+    /* background: lightcoral; */
+    position: relative;
+}
