@@ -14,7 +14,8 @@ Then the moving sensor (tag) can move around, measure distances using UWB rangin
 
 ![UWB-system sketch](./Pictures/Gesamtsystem%20Skizze.png)
 
-The website is used to enter the positions of the anchors, and display the corrsponding measured distances, as well as the approximated position of the moving tag.
+The website is used to enter the positions of the anchors, and display the corrsponding measured distances.
+With the help of a library, the approximate position of the moving tag is calculated through trilateration, and displayed.
 The measurements of the tag are stored, and can be viewed live, or saved in sessions and replayed.
 
 ![Website](./Pictures/Website%20Anwendungsoberfläche.png)
